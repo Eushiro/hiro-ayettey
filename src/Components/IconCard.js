@@ -15,7 +15,7 @@ function IconCard(iconDescription, key) {
             alt="icon"
             src={iconDescription.image}
         />
-        <Text fontSize={{ base: "1.5em", md: "2em", lg: "2em", xl: "2em" }} className="AboutCardText">{iconDescription.text}</Text>
+        <Text fontSize={{ base: "1.5em", md: "2em" }} className="AboutCardText">{iconDescription.text}</Text>
     </div>)
 
     if (linksToFile) {

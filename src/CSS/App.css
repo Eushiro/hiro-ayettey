@@ -1,4 +1,5 @@
 .App {
+  width: 98vw;
   background-color: white;
 }
 
@@ -46,24 +47,29 @@
   margin-bottom: 13vh;
 }
 
-.AboutCard:hover {
+.AboutCard:hover,
+.ExternalSiteCard:hover,
+.HomeCard:hover {
   transform: scale(1.1);
 }
 
-.AboutCardText {
+.AboutCardText,
+.ExternalSiteCardText {
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
     Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
   font-weight: 500;
   padding-top: 3vh;
 }
 
-.WorkExperience {
+.WorkExperience,
+.Projects {
   margin-left: 3vw;
   margin-right: 3vw;
   margin-top: 3vh;
 }
 
-.WorkExperienceTitle {
+.WorkExperienceTitle,
+.ProjectsTitle {
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
     Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
   font-weight: 600;
@@ -76,4 +82,36 @@
   font-weight: 700;
   font-size: 30px;
   width: 90vw;
+}
+
+.ExternalSiteCard {
+  position: fixed;
+  bottom: 3vh;
+  right: 3vw;
+  width: 15vh;
+  height: 15vh;
+  text-align: center;
+  background: white;
+  border-radius: 10%;
+  background-size: cover;
+  background-position: center center;
+  box-shadow: 0px 10px 30px -5px rgba(0, 0, 0, 0.3);
+  transition: all 0.2s ease-in-out;
+  border: 15px solid white;
+}
+
+.HomeCard {
+  position: fixed;
+  bottom: 3vh;
+  left: 3vw;
+  width: 15vh;
+  height: 15vh;
+  text-align: center;
+  background: white;
+  border-radius: 10%;
+  background-size: cover;
+  background-position: center center;
+  box-shadow: 0px 10px 30px -5px rgba(0, 0, 0, 0.3);
+  transition: all 0.2s ease-in-out;
+  border: 15px solid white;
 }
