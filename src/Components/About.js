@@ -1,9 +1,9 @@
 import React from 'react';
-import profilePicture from '../../images/profile.jpg'
+import profilePicture from '../images/profile.jpg'
 import { Flex, Text } from "@chakra-ui/react"
-import '../../CSS/App.css'
-import IconCard from './IconCard';
-import aboutDescriptions from "../../Descriptions/IconDescription"
+import '../CSS/App.css'
+import { IconCard } from './IconCard';
+import { aboutDescriptions } from "../Descriptions/IconDescription"
 import Img from 'gatsby-image'
 import { graphql, useStaticQuery } from 'gatsby'
 
@@ -42,4 +42,4 @@ function About() {
     );
 }
 
-export default About;
+export { About };

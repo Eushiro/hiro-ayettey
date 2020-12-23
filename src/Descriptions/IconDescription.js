@@ -27,4 +27,4 @@ var aboutDescriptions = [
     )
 ]
 
-export default aboutDescriptions;
+export { aboutDescriptions };
