@@ -8,7 +8,6 @@ import LinkedInImage from "../images/linkedin.svg"
 import { HomeCard } from "../Components/HomeCard"
 import 'antd/dist/antd.css';
 import '../CSS/App.css'
-import resumesvg from '../images/resume.svg'
 import MetaTags from "../Components/MetaTags"
 
 const { Step } = Steps;
@@ -37,9 +36,9 @@ function WorkExperience() {
                             <Step title="Sept-Dec 2020" description="TD Labs" status="finish" className="WorkExperienceTimelineItem" />
                         </Steps>
                     </GridItem>
-                    {/* <GridItem rowStart={2} colStart={4}>
-                    <img src={resumesvg} style={{ width: "20vh", height: "20vh" }} />
-                </GridItem> */}
+                    <GridItem rowStart={5} colStart={4}>
+                        {/* an array of cards, put a flex grid in here? */}
+                    </GridItem>
                 </Grid>
                 {ExternalSiteCard(linkedInDescription)}
                 {HomeCard()}
