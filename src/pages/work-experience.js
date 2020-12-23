@@ -9,6 +9,7 @@ import { HomeCard } from "../Components/HomeCard"
 import 'antd/dist/antd.css';
 import '../CSS/App.css'
 import resumesvg from '../images/resume.svg'
+import MetaTags from "../Components/MetaTags"
 
 const { Step } = Steps;
 
@@ -22,6 +23,7 @@ function WorkExperience() {
     return (
         <ChakraProvider>
             <div className="App">
+                {MetaTags("Work Experience")}
                 <Grid h="97vh" className="WorkExperience" templateRows="repeat(15, 1fr)" templateColumns="repeat(20, 1fr)" flexWrap="wrap">
                     <GridItem colStart={2} rowStart={1} colSpan={{ base: 0, md: 12 }}>
                         <Text fontSize={{ base: "50px", md: "70px", lg: "73px" }} className="WorkExperienceTitle">

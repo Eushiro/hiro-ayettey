@@ -5,6 +5,7 @@ import IconDescription from "../Descriptions/IconDescription"
 import GithubImage from "../images/github.svg"
 import { HomeCard } from "../Components/HomeCard"
 import '../CSS/App.css'
+import MetaTags from "../Components/MetaTags"
 
 var githubDescription = new IconDescription(
     "Github",
@@ -16,6 +17,7 @@ function Projects() {
     return (
         <ChakraProvider>
             <div className="App">
+                {MetaTags("Projects")}
                 <Flex h="97vh" direction="row" justify="flex-start" className="Projects" flexWrap="wrap">
                     <Text fontSize={{ base: "50px", md: "70px", lg: "73px" }} className="ProjectsTitle">
                         Projects

@@ -7,6 +7,7 @@ import { IconCard } from '../Components/IconCard';
 import { aboutDescriptions } from "../Descriptions/IconDescription"
 import Img from 'gatsby-image'
 import { graphql, useStaticQuery } from 'gatsby'
+import MetaTags from "../Components/MetaTags"
 
 export const query = graphql`
   query MyQuery {
@@ -29,6 +30,7 @@ function Home() {
   return (
     <ChakraProvider>
       <div className="App">
+        {MetaTags("Home")}
         <Flex h="97vh" direction="column" className="About" alignItems="center">
           <Text fontSize={{ base: "50px", md: "70px", lg: "73px" }} className="AboutTitle">
             Hiro Ayettey
