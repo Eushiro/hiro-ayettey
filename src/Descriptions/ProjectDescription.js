@@ -17,7 +17,7 @@ function ProjectDescription(title, languages, description, image, link) {
     this.link = link;
 }
 
-var useVideos = false;
+var useVideos = true;
 
 var projectDescriptions = [
     new ProjectDescription(
