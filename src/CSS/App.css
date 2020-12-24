@@ -151,7 +151,7 @@
   -ms-user-select: none;
 }
 
-@media (max-width: 700px) {
+@media (max-width: 780px) {
   .WorkExperienceImage,
   .ProjectCardImage {
     display: none !important;
@@ -176,7 +176,7 @@
   transform: translatey(5px);
 }
 
-@media (max-width: 700px) {
+@media (max-width: 780px) {
   .WorkExperienceTextContainer {
     border-radius: 10%/8%;
   }
@@ -186,7 +186,7 @@
   }
 }
 
-@media (min-width: 701px) and (max-width: 1025px) {
+@media (min-width: 781px) and (max-width: 1025px) {
   .WorkExperienceTextContainer,
   .ProjectCardContainer {
     border-radius: 4%/8%;
