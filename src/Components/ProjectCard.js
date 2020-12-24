@@ -4,13 +4,17 @@ import 'antd/dist/antd.css';
 import '../CSS/App.css'
 
 function ProjectCard(projectDescription, key) {
+    var mediaTag = (<Image src={projectDescription.image} className="ProjectCardImage" alt="project" />)
+    if (projectDescription.image.includes(".mp4")) {
+        mediaTag = (<video autoPlay muted loop src={projectDescription.image} className="ProjectCardImage" alt="project" />)
+    }
     return (
         <GridItem rowSpan={{ base: 2, sm: 2 }} colSpan={{ base: 19 }} mb={{ base: "3vh" }} key={key}>
             <a href={projectDescription.link}>
                 <div className="ProjectCardContainer">
                     <Flex className="ProjectCard" direction="row">
                         <Box flexBasis="25%" className="ProjectCardImageWrapper">
-                            <Image src={projectDescription.image} className="ProjectCardImage" alt="project" />
+                            {mediaTag}
                         </Box>
                         <Stack flexBasis={{ base: "100%", sm: "70%" }} ml={{ md: "1.5vw" }} p={{ base: "2vh", sm: "0vh" }}>
                             <Text className="ProjectCardTitle" fontSize={{ base: "30px", md: "40px", lg: "40px" }} >{projectDescription.title}</Text>

@@ -1,4 +1,4 @@
-import threadsImage from "../images/threads.png"
+import threadsImage from "../images/threads.jpg"
 import textnowImage from "../images/textnow.jpg"
 import tdlabImage from "../images/tdlab.jpg"
 

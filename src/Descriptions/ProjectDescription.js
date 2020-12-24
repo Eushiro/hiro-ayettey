@@ -1,8 +1,13 @@
 import SnakeGif from "../images/SnakeGif.gif"
-import hiroayettey from '../images/hiroayettey.png';
+import hiroayettey from '../images/hiroayettey.jpg';
 import WomenInStem from "../images/WomenInStem.gif"
 import LecturesPlusPlus from "../images/Lectures++.gif"
 import Youtrends from "../images/youtrends.gif"
+
+import YoutrendsVideo from "../images/youtrends.mp4"
+import SnakeVideo from "../images/SnakeGif.mp4"
+import WomenInStemVideo from "../images/WomenInStem.mp4"
+import LecturesPlusPlusVideo from "../images/Lectures++.mp4"
 
 function ProjectDescription(title, languages, description, image, link) {
     this.title = title;
@@ -19,7 +24,7 @@ var projectDescriptions = [
         `A chrome extension that speeds up lectures intelligently, displays a live chat, and generates a transcript
          Created the overlay that displays the chat/transcript, and wrote the live chat API 
         `,
-        LecturesPlusPlus,
+        LecturesPlusPlusVideo,
         "https://github.com/Eushiro/LecturesPlusPlus"
     ),
     new ProjectDescription(
@@ -29,7 +34,7 @@ var projectDescriptions = [
          Built the frontend of the application with React to display videos, create playlists and visualize trends
          Created in a team of 5, using Github for version control
         `,
-        Youtrends,
+        YoutrendsVideo,
         "https://github.com/Eushiro/YouTrends"
     ),
     new ProjectDescription(
@@ -51,7 +56,7 @@ var projectDescriptions = [
         This app recognizes their efforts and encourage you to learn more about their stories and try the quiz to test your learning.
         Click the Github icon to see the project's source code.   
         `,
-        WomenInStem,
+        WomenInStemVideo,
         "https://github.com/Eushiro/Women-In-Stem"
     ),
     new ProjectDescription(
@@ -62,7 +67,7 @@ var projectDescriptions = [
         they lose health. When a snake is hit at 3 health or runs into itself at any health, it dies. 
         Click the Github icon to see the project's source code.   
             `,
-        SnakeGif,
+        SnakeVideo,
         "https://github.com/Eushiro/Snake_Brawl"
     )
 ]
