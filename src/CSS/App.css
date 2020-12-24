@@ -103,13 +103,23 @@
   }
 }
 
-.WorkExperienceImage,
-.ProjectCardImage {
+.WorkExperienceImage {
   position: relative;
   height: 21vh;
   object-fit: cover;
   z-index: 2;
   border-radius: 5%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.ProjectCardImage {
+  position: relative;
+  height: 21vh;
+  object-fit: cover;
+  z-index: 2;
+  border-radius: 3%;
   display: block;
   margin-left: auto;
   margin-right: auto;
