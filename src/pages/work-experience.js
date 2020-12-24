@@ -1,7 +1,7 @@
 import React from 'react';
 import { ChakraProvider } from "@chakra-ui/react"
 import { Steps } from 'antd'
-import { Grid, GridItem, Text, HStack, Stack } from "@chakra-ui/react"
+import { Grid, GridItem, Text } from "@chakra-ui/react"
 import { ExternalSiteCard } from "../Components/ExternalSiteCard"
 import IconDescription from "../Descriptions/IconDescription"
 import LinkedInImage from "../images/linkedin.svg"

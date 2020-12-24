@@ -1,8 +1,4 @@
 import hiroayettey from '../images/hiroayettey.jpg';
-import SnakeGif from "../images/SnakeGif.gif"
-import WomenInStem from "../images/WomenInStem.gif"
-import LecturesPlusPlus from "../images/Lectures++.gif"
-import Youtrends from "../images/youtrends.gif"
 
 import YoutrendsVideo from "../images/youtrends.mp4"
 import SnakeVideo from "../images/SnakeGif.mp4"
@@ -22,12 +18,7 @@ function ProjectDescription(title, languages, description, image, link) {
     this.link = link;
 }
 
-const isSafari = () => {
-    const ua = navigator.userAgent.toLowerCase();
-    return ua.indexOf("safari") > -1 && ua.indexOf("chrome") < 0;
-};
-
-var useVideos = !isSafari();
+var useVideos = true;
 
 var projectDescriptions = [
     new ProjectDescription(
