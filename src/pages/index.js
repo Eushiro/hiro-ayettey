@@ -39,7 +39,7 @@ function Home() {
           <Img fluid={data.file.childImageSharp.fluid} />
           <Text fontSize={{ base: "20px", md: "28px" }} className="AboutDescription">
             Hi I'm Hiro, a Software Engineering student at the University of Waterloo
-            </Text>
+          </Text>
           <Flex w="97vw" direction="row" justify="space-evenly" flexWrap="wrap">
             {iconCards}
           </Flex>
