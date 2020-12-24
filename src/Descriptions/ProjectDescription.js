@@ -1,5 +1,5 @@
-import SnakeGif from "../images/SnakeGif.gif"
 import hiroayettey from '../images/hiroayettey.jpg';
+import SnakeGif from "../images/SnakeGif.gif"
 import WomenInStem from "../images/WomenInStem.gif"
 import LecturesPlusPlus from "../images/Lectures++.gif"
 import Youtrends from "../images/youtrends.gif"
@@ -17,6 +17,8 @@ function ProjectDescription(title, languages, description, image, link) {
     this.link = link;
 }
 
+var useVideos = false;
+
 var projectDescriptions = [
     new ProjectDescription(
         "Lectures++ (Hack Western 7)",
@@ -24,7 +26,7 @@ var projectDescriptions = [
         `A chrome extension that speeds up lectures intelligently, displays a live chat, and generates a transcript.
         Created the overlay that displays the chat/transcript, and wrote the live chat API 
         `,
-        LecturesPlusPlusVideo,
+        useVideos ? LecturesPlusPlusVideo : LecturesPlusPlus,
         "https://github.com/Eushiro/LecturesPlusPlus"
     ),
     new ProjectDescription(
@@ -34,7 +36,7 @@ var projectDescriptions = [
         Built the frontend of the application with React to display videos, create playlists and visualize trends.
         Created in a team of 5, using Github for version control
         `,
-        YoutrendsVideo,
+        useVideos ? YoutrendsVideo : Youtrends,
         "https://github.com/Eushiro/YouTrends"
     ),
     new ProjectDescription(
@@ -54,7 +56,7 @@ var projectDescriptions = [
         Over history there have been many minority women who have made significant contributions to various STEM fields.
         This app recognizes their efforts and encourage you to learn more about their stories and try the quiz to test your learning.
         `,
-        WomenInStemVideo,
+        useVideos ? WomenInStemVideo : WomenInStem,
         "https://github.com/Eushiro/Women-In-Stem"
     ),
     new ProjectDescription(
@@ -64,7 +66,7 @@ var projectDescriptions = [
         Use the joysticks to control your snake. Eat some food to grow in size, when you hit the other snake head on, 
         they lose health. When a snake is hit at 3 health or runs into itself at any health, it dies. 
             `,
-        SnakeVideo,
+        useVideos ? SnakeVideo : SnakeGif,
         "https://github.com/Eushiro/Snake_Brawl"
     )
 ]
