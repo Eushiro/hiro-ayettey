@@ -9,6 +9,11 @@ import SnakeVideo from "../images/SnakeGif.mp4"
 import WomenInStemVideo from "../images/WomenInStem.mp4"
 import LecturesPlusPlusVideo from "../images/Lectures++.mp4"
 
+import YouTrendsImage from "../images/youtrends.jpg"
+import WomenInStemImage from "../images/WomenInStem.jpg"
+import SnakeGifImage from "../images/SnakeGif.jpg"
+import LecturesPlusPlusImage from "../images/Lectures++.jpg"
+
 function ProjectDescription(title, languages, description, image, link) {
     this.title = title;
     this.languages = languages;
@@ -17,7 +22,12 @@ function ProjectDescription(title, languages, description, image, link) {
     this.link = link;
 }
 
-var useVideos = true;
+const isSafari = () => {
+    const ua = navigator.userAgent.toLowerCase();
+    return ua.indexOf("safari") > -1 && ua.indexOf("chrome") < 0;
+};
+
+var useVideos = !isSafari();
 
 var projectDescriptions = [
     new ProjectDescription(
@@ -26,7 +36,7 @@ var projectDescriptions = [
         `A chrome extension that speeds up lectures intelligently, displays a live chat, and generates a transcript.
         Created the overlay that displays the chat/transcript, and wrote the live chat API 
         `,
-        useVideos ? LecturesPlusPlusVideo : LecturesPlusPlus,
+        useVideos ? LecturesPlusPlusVideo : LecturesPlusPlusImage,
         "https://github.com/Eushiro/LecturesPlusPlus"
     ),
     new ProjectDescription(
@@ -36,7 +46,7 @@ var projectDescriptions = [
         Built the frontend of the application with React to display videos, create playlists and visualize trends.
         Created in a team of 5, using Github for version control
         `,
-        useVideos ? YoutrendsVideo : Youtrends,
+        useVideos ? YoutrendsVideo : YouTrendsImage,
         "https://github.com/Eushiro/YouTrends"
     ),
     new ProjectDescription(
@@ -56,7 +66,7 @@ var projectDescriptions = [
         Over history there have been many minority women who have made significant contributions to various STEM fields.
         This app recognizes their efforts and encourage you to learn more about their stories and try the quiz to test your learning.
         `,
-        useVideos ? WomenInStemVideo : WomenInStem,
+        useVideos ? WomenInStemVideo : WomenInStemImage,
         "https://github.com/Eushiro/Women-In-Stem"
     ),
     new ProjectDescription(
@@ -66,7 +76,7 @@ var projectDescriptions = [
         Use the joysticks to control your snake. Eat some food to grow in size, when you hit the other snake head on, 
         they lose health. When a snake is hit at 3 health or runs into itself at any health, it dies. 
             `,
-        useVideos ? SnakeVideo : SnakeGif,
+        useVideos ? SnakeVideo : SnakeGifImage,
         "https://github.com/Eushiro/Snake_Brawl"
     )
 ]
