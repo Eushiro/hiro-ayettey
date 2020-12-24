@@ -1,5 +1,5 @@
 import React from 'react';
-import { GridItem, Text, Box, Stack, Flex } from "@chakra-ui/react"
+import { GridItem, Text, Stack, Flex, Box } from "@chakra-ui/react"
 import 'antd/dist/antd.css';
 import '../CSS/App.css'
 
@@ -8,10 +8,10 @@ function WorkExperienceCard(jobDescription, key) {
         <GridItem rowSpan={{ base: 2, sm: 2 }} colSpan={{ base: 18, sm: 14, md: 19, lg: 19, xl: 19 }} mb={{ base: "3vh" }} key={key}>
             <div className="WorkExperienceTextContainer">
                 <Flex className="WorkExperienceCard" direction="row">
-                    <Box flexBasis="25%">
+                    <Box flexBasis="25%" className="WorkExperienceImageWrapper">
                         <img src={jobDescription.image} className="WorkExperienceImage" alt="work experience" />
                     </Box>
-                    <Stack flexBasis="70%" ml="1.5vw">
+                    <Stack flexBasis={{ base: "100%", sm: "70%" }} ml={{ md: "1.5vw" }} p={{ base: "2vh", sm: "0vh" }}>
                         <a href={jobDescription.link}>
                             <Text className="WorkExperienceTextTitle" fontSize={{ base: "30px", md: "40px", lg: "40px" }} >{jobDescription.title}</Text>
                         </a>

@@ -73,6 +73,7 @@
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
     Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
   font-weight: 600;
+  margin-bottom: 4vh;
 }
 
 .WorkExperienceTimeline {
@@ -87,6 +88,19 @@
 .ProjectCard {
   min-height: 100% !important;
   height: auto;
+}
+
+.ProjectCardImageWrapper,
+.WorkExperienceImageWrapper {
+  display: flex;
+  align-items: center;
+}
+
+@media (max-width: 700px) {
+  .ProjectCardImageWrapper,
+  .WorkExperienceImageWrapper {
+    display: none;
+  }
 }
 
 .WorkExperienceImage,
@@ -104,7 +118,7 @@
 @media (max-width: 700px) {
   .WorkExperienceImage,
   .ProjectCardImage {
-    display: none;
+    display: none !important;
   }
 }
 

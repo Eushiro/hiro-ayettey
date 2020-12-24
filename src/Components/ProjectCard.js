@@ -5,13 +5,13 @@ import '../CSS/App.css'
 
 function ProjectCard(projectDescription, key) {
     return (
-        <GridItem rowSpan={{ base: 2, sm: 2 }} colSpan={{ base: 18, sm: 14, md: 19, lg: 19, xl: 19 }} mb={{ base: "3vh" }} key={key}>
+        <GridItem rowSpan={{ base: 2, sm: 2 }} colSpan={{ base: 19 }} mb={{ base: "3vh" }} key={key}>
             <div className="ProjectCardContainer">
                 <Flex className="ProjectCard" direction="row">
-                    <Box flexBasis="25%">
+                    <Box flexBasis="25%" className="ProjectCardImageWrapper">
                         <Image src={projectDescription.image} className="ProjectCardImage" alt="project" />
                     </Box>
-                    <Stack flexBasis="70%" ml="1vw">
+                    <Stack flexBasis={{ base: "100%", sm: "70%" }} ml={{ md: "1.5vw" }} p={{ base: "2vh", sm: "0vh" }}>
                         <a href={projectDescription.link}>
                             <Text className="ProjectCardTitle" fontSize={{ base: "30px", md: "40px", lg: "40px" }} >{projectDescription.title}</Text>
                         </a>
