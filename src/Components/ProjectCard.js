@@ -6,7 +6,7 @@ import '../CSS/App.css'
 function ProjectCard(projectDescription, key) {
     var mediaTag = (<Image src={projectDescription.image} className="ProjectCardImage" alt="project" />)
     if (projectDescription.image.includes(".mp4")) {
-        mediaTag = (<video autoPlay muted loop src={projectDescription.image} className="ProjectCardImage" alt="project" />)
+        mediaTag = (<video autoPlay muted loop playsInline src={projectDescription.image} className="ProjectCardImage" alt="project" />)
     }
     return (
         <GridItem rowSpan={{ base: 2, sm: 2 }} colSpan={{ base: 19 }} mb={{ base: "3vh" }} key={key}>
