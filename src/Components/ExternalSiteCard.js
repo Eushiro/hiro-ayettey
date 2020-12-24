@@ -8,6 +8,7 @@ function ExternalSiteCard(iconDescription) {
                 <img
                     alt="icon"
                     src={iconDescription.image}
+                    className="ExternalSiteCardImage"
                 />
             </div>
         </a>

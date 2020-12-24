@@ -14,6 +14,7 @@ function IconCard(iconDescription, key) {
         <img
             alt="icon"
             src={iconDescription.image}
+            className="AboutCardImage"
         />
         <Text fontSize={{ base: "1.5em", md: "2em" }} className="AboutCardText">{iconDescription.text}</Text>
     </div>)

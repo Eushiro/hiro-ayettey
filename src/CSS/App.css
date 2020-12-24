@@ -23,6 +23,12 @@
   height: 23vh;
   margin-left: 1vw;
   margin-bottom: 3vh;
+  user-drag: none;
+  user-select: none;
+  -moz-user-select: none;
+  -webkit-user-drag: none;
+  -webkit-user-select: none;
+  -ms-user-select: none;
 }
 
 .AboutDescription {
@@ -45,6 +51,15 @@
   transition: all 0.2s ease-in-out;
   border: 15px solid white;
   margin-bottom: 13vh;
+}
+
+.AboutCardImage {
+  user-drag: none;
+  user-select: none;
+  -moz-user-select: none;
+  -webkit-user-drag: none;
+  -webkit-user-select: none;
+  -ms-user-select: none;
 }
 
 .AboutCard:hover,
@@ -112,6 +127,12 @@
   display: block;
   margin-left: auto;
   margin-right: auto;
+  user-drag: none;
+  user-select: none;
+  -moz-user-select: none;
+  -webkit-user-drag: none;
+  -webkit-user-select: none;
+  -ms-user-select: none;
 }
 
 .ProjectCardImage {
@@ -123,6 +144,11 @@
   display: block;
   margin-left: auto;
   margin-right: auto;
+  user-select: none;
+  -moz-user-select: none;
+  -webkit-user-drag: none;
+  -webkit-user-select: none;
+  -ms-user-select: none;
 }
 
 @media (max-width: 700px) {
@@ -202,6 +228,15 @@
   z-index: 3;
 }
 
+.ExternalSiteCardImage {
+  user-drag: none;
+  user-select: none;
+  -moz-user-select: none;
+  -webkit-user-drag: none;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+}
+
 .HomeCard {
   position: fixed;
   bottom: 3vh;
@@ -217,4 +252,13 @@
   transition: all 0.2s ease-in-out;
   border: 15px solid white;
   z-index: 3;
+}
+
+.HomeCardImage {
+  user-drag: none;
+  user-select: none;
+  -moz-user-select: none;
+  -webkit-user-drag: none;
+  -webkit-user-select: none;
+  -ms-user-select: none;
 }

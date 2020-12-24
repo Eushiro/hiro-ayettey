@@ -10,6 +10,7 @@ function HomeCard() {
                 <img
                     alt="home"
                     src={HomeImage}
+                    className="HomeCardImage"
                 />
             </div>
         </Link>

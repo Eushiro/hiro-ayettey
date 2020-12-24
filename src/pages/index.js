@@ -5,24 +5,9 @@ import profilePicture from '../images/profile.jpg'
 import { Flex, Text } from "@chakra-ui/react"
 import { IconCard } from '../Components/IconCard';
 import { aboutDescriptions } from "../Descriptions/IconDescription"
-import Img from 'gatsby-image'
-import { graphql, useStaticQuery } from 'gatsby'
 import MetaTags from "../Components/MetaTags"
 
-export const query = graphql`
-  query MyQuery {
-    file(relativePath: { eq: "profile.jpg" }) {
-      childImageSharp {
-        fluid {
-          ...GatsbyImageSharpFluid
-        }
-      }
-    }
-  }
-`
-
 function Home() {
-  var data = useStaticQuery(query)
   var iconCards = []
   for (var i = 0; i < aboutDescriptions.length; i++) {
     iconCards.push(IconCard(aboutDescriptions[i], i))
@@ -36,7 +21,6 @@ function Home() {
             Hiro Ayettey
             </Text>
           <img src={profilePicture} className="AboutPhoto" alt="Hiro Ayettey" />
-          <Img fluid={data.file.childImageSharp.fluid} />
           <Text fontSize={{ base: "20px", md: "28px" }} className="AboutDescription">
             Hi I'm Hiro, a Software Engineering student at the University of Waterloo
           </Text>
