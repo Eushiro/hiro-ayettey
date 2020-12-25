@@ -28,7 +28,7 @@ var projectDescriptions = [
         My personal website describing who I am, my past work experience and some of the projects I've worked on. Hope you like it!
         `,
         hiroayettey,
-        "https://github.com/Eushiro/hiroayettey"
+        "https://github.com/Eushiro/hiro-ayettey"
     ),
     new ProjectDescription(
         "Lectures++ (Hack Western 7)",
