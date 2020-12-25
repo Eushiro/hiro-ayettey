@@ -16,10 +16,10 @@ function ProjectCard(projectDescription, key) {
                         <Box flexBasis={{ md: "35%", lg: "30%", xl: "25%" }} className="ProjectCardImageWrapper">
                             {mediaTag}
                         </Box>
-                        <Stack flexBasis={{ base: "100%", md: "65%", lg: "70%", xl: "75%" }} ml={{ md: "2vw" }} p={{ base: "2vh", sm: "0vh", md: "1vh", lg: "0vh" }}>
+                        <Stack flexBasis={{ base: "100%", md: "65%", lg: "70%", xl: "75%" }} ml={{ md: "1.5vw" }} p={{ base: "2vh", md: "1.5vh" }}>
                             <Text className="ProjectCardTitle" fontSize={{ base: "30px", md: "38px", lg: "40px" }} >{projectDescription.title}</Text>
                             <Text className="ProjectCardTechnologies" fontSize={{ base: "20px", md: "20px", lg: "20px" }}>{projectDescription.languages}</Text>
-                            <Text fontSize={{ base: "17px", md: "17px", lg: "20px" }} className="ProjectCardText">{projectDescription.description}</Text>
+                            <Text fontSize={{ base: "17px", lg: "19px" }} className="ProjectCardText">{projectDescription.description}</Text>
                         </Stack>
                     </Flex>
                 </div>
