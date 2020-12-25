@@ -20,15 +20,18 @@ function ProjectDescription(title, languages, description, image, link) {
 
 var useVideos = true;
 
+// Projects are ordered based on the size of the associated image
+// Smaller images/assets load faster so are placed at the top
+
 var projectDescriptions = [
     new ProjectDescription(
-        "Lectures++ (Hack Western 7)",
-        "Javascript, Google Cloud API, Docker, Express",
-        `A chrome extension that speeds up lectures intelligently, displays a live chat, and generates a transcript.
-        Created the overlay that displays the chat/transcript, and wrote the live chat API 
+        "HiroAyettey.com",
+        "React, Chakra-UI, Gatsby",
+        `
+        My personal website describing who I am, my past work experience and some of the projects I've worked on. Hope you like it!
         `,
-        useVideos ? LecturesPlusPlusVideo : LecturesPlusPlusImage,
-        "https://github.com/Eushiro/LecturesPlusPlus"
+        hiroayettey,
+        "https://github.com/Eushiro/hiroayettey"
     ),
     new ProjectDescription(
         "Youtrends",
@@ -41,22 +44,13 @@ var projectDescriptions = [
         "https://github.com/Eushiro/YouTrends"
     ),
     new ProjectDescription(
-        "HiroAyettey.com",
-        "React, Chakra-UI, Gatsby",
-        `
-        My personal website describing who I am, my past work experience and some of the projects I've worked on. Hope you like it!
-        `,
-        hiroayettey,
-        "https://github.com/Eushiro/hiroayettey"
-    ),
-    new ProjectDescription(
         "Women in STEM",
         "Swift, SwiftUI, Firebase",
         `
-        My friend was writing a book about some of these women and she wanted to make an app to go along with it.
-        Over history there have been many minority women who have made significant contributions to various STEM fields.
-        This app recognizes their efforts and encourage you to learn more about their stories and try the quiz to test your learning.
-        `,
+            My friend was writing a book about some of these women and she wanted to make an app to go along with it.
+            Over history there have been many minority women who have made significant contributions to various STEM fields.
+            This app recognizes their efforts and encourage you to learn more about their stories and try the quiz to test your learning.
+            `,
         useVideos ? WomenInStemVideo : WomenInStemImage,
         "https://github.com/Eushiro/Women-In-Stem"
     ),
@@ -64,12 +58,21 @@ var projectDescriptions = [
         "Snake Brawl",
         "Swift, Arduino",
         `An adaptation of the classic game "Snake", "Snake Brawl" is a joystick controlled iOS game in which two snakes fight against each other! 
-        Use the joysticks to control your snake. Eat some food to grow in size, when you hit the other snake head on, 
-        they lose health. When a snake is hit at 3 health or runs into itself at any health, it dies. 
-            `,
+                Use the joysticks to control your snake. Eat some food to grow in size, when you hit the other snake head on, 
+                they lose health. When a snake is hit at 3 health or runs into itself at any health, it dies. 
+                `,
         useVideos ? SnakeVideo : SnakeGifImage,
         "https://github.com/Eushiro/Snake_Brawl"
-    )
+    ),
+    new ProjectDescription(
+        "Lectures++ (Hack Western 7)",
+        "Javascript, Google Cloud API, Docker, Express",
+        `A chrome extension that speeds up lectures intelligently, displays a live chat, and generates a transcript.
+                    Created the overlay that displays the chat/transcript, and wrote the live chat API 
+                    `,
+        useVideos ? LecturesPlusPlusVideo : LecturesPlusPlusImage,
+        "https://github.com/Eushiro/LecturesPlusPlus"
+    ),
 ]
 
 export { projectDescriptions };
