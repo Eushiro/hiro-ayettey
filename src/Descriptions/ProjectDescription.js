@@ -22,6 +22,15 @@ var useVideos = true;
 
 var projectDescriptions = [
     new ProjectDescription(
+        "HiroAyettey.com",
+        "React, Chakra-UI, Gatsby",
+        `
+        My personal website describing who I am, my past work experience and some of the projects I've worked on. Hope you like it!
+        `,
+        hiroayettey,
+        "https://github.com/Eushiro/hiroayettey"
+    ),
+    new ProjectDescription(
         "Lectures++ (Hack Western 7)",
         "Javascript, Google Cloud API, Docker, Express",
         `A chrome extension that speeds up lectures intelligently, displays a live chat, and generates a transcript.
@@ -39,15 +48,6 @@ var projectDescriptions = [
         `,
         useVideos ? YoutrendsVideo : YouTrendsImage,
         "https://github.com/Eushiro/YouTrends"
-    ),
-    new ProjectDescription(
-        "HiroAyettey.com",
-        "React, Chakra-UI, Gatsby",
-        `
-        My personal website describing who I am, my past work experience and some of the projects I've worked on. Hope you like it!
-        `,
-        hiroayettey,
-        "https://github.com/Eushiro/hiroayettey"
     ),
     new ProjectDescription(
         "Women in STEM",
