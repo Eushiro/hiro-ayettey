@@ -8,7 +8,6 @@ function MetaTags(pageTitle) {
           This is my personal website describing some of the places I've worked at and projects I've made"
             />
             <title>Hiro Ayettey - {pageTitle}</title>
-            <link rel="canonical" href="https://hiroayettey.com" />
         </Helmet>
     );
 }

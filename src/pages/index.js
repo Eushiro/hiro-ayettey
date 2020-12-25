@@ -1,7 +1,7 @@
 import React from 'react';
 import '../CSS/App.css';
 import { ChakraProvider } from "@chakra-ui/react"
-import profilePicture from '../images/profile.jpg'
+import profilePicture from '../images/profile.webp'
 import { Flex, Text } from "@chakra-ui/react"
 import { IconCard } from '../Components/IconCard';
 import { aboutDescriptions } from "../Descriptions/IconDescription"

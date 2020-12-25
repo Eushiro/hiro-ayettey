@@ -1,6 +1,6 @@
-import threadsImage from "../images/threads.jpg"
-import textnowImage from "../images/textnow.jpg"
-import tdlabImage from "../images/tdlab.jpg"
+import threadsImage from "../images/threads.webp"
+import textnowImage from "../images/textnow.webp"
+import tdlabImage from "../images/tdlab.webp"
 
 export default function JobDescription(title, jobPosition, location, text, link, image) {
     this.title = title;
