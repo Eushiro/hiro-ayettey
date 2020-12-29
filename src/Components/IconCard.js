@@ -1,7 +1,7 @@
 import React from 'react';
 import { Text } from "@chakra-ui/react"
 import '../CSS/App.css'
-import { Link } from 'gatsby'
+import { Link, withPrefix } from 'gatsby'
 
 function isFile(linkName) {
     return /\.[0-9a-z]+$/i.test(linkName)
@@ -22,7 +22,7 @@ function IconCard(iconDescription, key) {
     if (linksToFile) {
         return (
             <div key={key}>
-                <a href={iconDescription.link}>
+                <a href={withPrefix("./hiro-resume.pdf")}>
                     {body}
                 </a>
             </div>

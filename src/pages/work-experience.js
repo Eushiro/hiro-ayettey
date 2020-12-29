@@ -28,7 +28,7 @@ function WorkExperience() {
     return (
         <ChakraProvider>
             <div className="App">
-                {MetaTags("Work Experience")}
+                {MetaTags("Work Experience", "https://hiroayettey.com/work-experience")}
                 <Grid className="WorkExperience" templateColumns="repeat(20, 1fr)" pb="20vh">
                     <GridItem colStart={2} rowStart={1} colSpan={{ base: 0, md: 12 }}>
                         <Text fontSize={{ base: "50px", md: "70px", lg: "73px" }} className="WorkExperienceTitle">

@@ -15,7 +15,7 @@ function Home() {
   return (
     <ChakraProvider>
       <div className="App">
-        {MetaTags("Home")}
+        {MetaTags("Home", "https://hiroayettey.com")}
         <Flex h="97vh" direction="column" className="About" alignItems="center">
           <Text fontSize={{ base: "50px", md: "70px", lg: "73px" }} className="AboutTitle">
             Hiro Ayettey
