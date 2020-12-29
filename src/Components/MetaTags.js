@@ -4,8 +4,7 @@ import profile from "../images/profile.webp"
 
 function MetaTags(pageTitle, url) {
   var title = "Hiro Ayettey - " + pageTitle
-  var description = `Hi I'm Hiro, a Software Engineering student at the University of Waterloo. 
-  This is my personal website describing some of my work experience and projects.`
+  var description = "Hi I'm Hiro, a Software Engineering student at the University of Waterloo. This is my personal website describing some of my work experience and projects."
   return (
     <Helmet>
       <title>{title}</title>
