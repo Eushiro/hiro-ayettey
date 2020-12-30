@@ -22,7 +22,7 @@ function IconCard(iconDescription, key) {
     if (linksToFile) {
         return (
             <div key={key}>
-                <a href={withPrefix("./hiro-resume.pdf")}>
+                <a href={withPrefix("./resume.pdf")}>
                     {body}
                 </a>
             </div>
