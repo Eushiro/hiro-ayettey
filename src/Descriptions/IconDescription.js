@@ -1,6 +1,7 @@
 import resumeIllustration from "../images/resume.svg"
 import workExperienceIllustration from "../images/workExperience.svg"
 import projectsIllustration from "../images/projects.svg"
+import resume from "../../resume.pdf"
 
 export default function IconDescription(text, image, link) {
     this.image = image;
@@ -12,7 +13,7 @@ var aboutDescriptions = [
     new IconDescription(
         "Resume",
         resumeIllustration,
-        ".pdf"
+        resume
     ),
     new IconDescription(
         "Work Experience",
