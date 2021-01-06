@@ -18,8 +18,7 @@ var jobDescriptions = [
         "San Francisco, CA",
         `Threads is a startup looking to make work more inclusive. They're doing this by making sure everyone has a voice when making decisions.
         I worked with Thread's Mobile team prior to its launch, adding features to its iOS and Android apps.
-        The Threads apps are built primarily with Swift and Kotlin. You can click the image to the left to visit Threads' website, 
-        or check out my resume to learn more about the projects I worked on.`,
+        The Threads apps are built primarily with Swift and Kotlin.`,
         "https://threads.com",
         threadsImage
     ),
@@ -30,7 +29,6 @@ var jobDescriptions = [
         `
         TextNow is working to help the world communicate for free or as close to free as possible. TextNow is a communication platform that even gives you a phone number for free.
         I worked on the Android team to on both internal and user-facing projects. 
-        You can click the image to the left to visit TextNow's website, or check out my resume to learn more about the projects I worked on.
         `,
         "https://www.textnow.com/",
         textnowImage
