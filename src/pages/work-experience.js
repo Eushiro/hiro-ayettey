@@ -35,8 +35,8 @@ function WorkExperience() {
                             Work Experience
                         </Text>
                     </GridItem>
-                    <GridItem colSpan={{ base: 20 }} mb="4vh">
-                        <Steps progressDot direction="horizontal" className="WorkExperienceTimeline" size="default">
+                    <GridItem colSpan={{ base: 20 }} className="WorkExperienceTimeline" mb="4vh">
+                        <Steps progressDot direction="horizontal" size="default">
                             <Step title="May-Aug 2019" description="Threads" status="finish" className="WorkExperienceTimelineItem" />
                             <Step title="Jan-Apr 2020" description="TextNow" status="finish" className="WorkExperienceTimelineItem" />
                             <Step title="Sept-Dec 2020" description="TD Labs" status="finish" className="WorkExperienceTimelineItem" />
