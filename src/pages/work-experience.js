@@ -22,8 +22,11 @@ var linkedInDescription = new IconDescription(
 
 function WorkExperience() {
     var jobCards = []
+    var timelineSteps = []
     for (var i = 0; i < jobDescriptions.length; i++) {
         jobCards.push(WorkExperienceCard(jobDescriptions[i], i))
+        var step = <Step title={jobDescriptions[i].date} description={jobDescriptions[i].title} status="finish" className="WorkExperienceTimelineItem" />
+        timelineSteps.push(step)
     }
     return (
         <ChakraProvider>
@@ -37,9 +40,7 @@ function WorkExperience() {
                     </GridItem>
                     <GridItem colSpan={{ base: 20 }} className="WorkExperienceTimeline" mb="4vh">
                         <Steps progressDot direction="horizontal" size="default">
-                            <Step title="May-Aug 2019" description="Threads" status="finish" className="WorkExperienceTimelineItem" />
-                            <Step title="Jan-Apr 2020" description="TextNow" status="finish" className="WorkExperienceTimelineItem" />
-                            <Step title="Sept-Dec 2020" description="TD Labs" status="finish" className="WorkExperienceTimelineItem" />
+                            {timelineSteps}
                         </Steps>
                     </GridItem>
                     {jobCards.reverse()}

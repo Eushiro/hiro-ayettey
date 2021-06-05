@@ -1,14 +1,16 @@
 import threadsImage from "../images/threads.webp"
 import textnowImage from "../images/textnow.webp"
 import tdlabImage from "../images/tdlab.webp"
+import figmaImage from "../images/figma.webp"
 
-export default function JobDescription(title, jobPosition, location, text, link, image) {
-    this.title = title;
+export default function JobDescription(title, jobPosition, location, text, link, image, date) {
+    this.title = title
     this.jobPosition = jobPosition
     this.location = location
     this.image = image;
-    this.text = text;
+    this.text = text
     this.link = link
+    this.date = date
 }
 
 var jobDescriptions = [
@@ -20,7 +22,8 @@ var jobDescriptions = [
         I worked with Thread's Mobile team prior to its launch, adding features to its iOS and Android apps.
         The Threads apps are built primarily with Swift and Kotlin.`,
         "https://threads.com",
-        threadsImage
+        threadsImage,
+        "May '19-Aug '19"
     ),
     new JobDescription(
         "TextNow",
@@ -31,7 +34,8 @@ var jobDescriptions = [
         I worked on the Android team to on both internal and user-facing projects. 
         `,
         "https://www.textnow.com/",
-        textnowImage
+        textnowImage,
+        "Jan '20-Apr '20"
     ),
     new JobDescription(
         "TD Labs",
@@ -39,7 +43,17 @@ var jobDescriptions = [
         "Waterloo, ON (Remote)",
         `Building financial solutions for students using new technologies as part of TD’s innovation lab`,
         "https://tdlab.io/",
-        tdlabImage
+        tdlabImage,
+        "Sept '20-Dec '20"
+    ),
+    new JobDescription(
+        "Figma",
+        "Software Engineering Intern",
+        "San Francisco, CA (Remote)",
+        `Building features for Figma Community`,
+        "https://figma.com/",
+        figmaImage,
+        "May '21-Aug '21"
     )
 ]
 
