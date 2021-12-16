@@ -190,6 +190,7 @@
   -webkit-transform: translatey(5px);
   transform: translatex(5px);
   transform: translatey(5px);
+  transition-duration: 0.25s;
 }
 
 .WorkExperienceTextTitle,
